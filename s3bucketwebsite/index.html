@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhon's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Define your CSS animations here */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Add more animations as needed */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        #projects, #reviews {
+            padding: 20px;
+        }
+        .project, .review {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project h3, .review p {
+            color: #333;
+        }
+        .project p, .review span {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            border-radius: 50%;
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jhon's Portfolio</h1>
+    </header>
+    <img src="s3://mywebsitebucket2024/profile.png" alt="Profile Image">
+    <section id="projects" class="animated fadeIn">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="reviews" class="animated fadeIn">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Great work! Highly recommended."</p>
+            <span>- Client A</span>
+        </div>
+        <div class="review">
+            <p>"Excellent communication and quality."</p>
+            <span>- Client B</span>
+        </div>
+            <!-- Add more reviews as needed -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Jhon's Portfolio</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
